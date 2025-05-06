@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BITES & BREW</title>
+  <link rel="stylesheet" href="finalRequirement.css">
+</head>
+<body>
+<header>
+  <img src="byte.png" class="logo">
+  <h1>LET'S COFFEE BREW</h1>
+  <div class="menu-toggle" aria-label="Toggle navigation menu" role="button" tabindex="0" aria-expanded="false" aria-controls="primary-navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <nav id="primary-navigation" aria-label="Primary navigation">
+    <a href="#menu" tabindex="0">Menu</a>
+    <a href="#about" tabindex="0">About</a>
+    <a href="#contact" tabindex="0">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h2>Experience The Taste of Excellence</h2>
+    <p>Welcome to Bite & Brew, “Wake Up and Smell the Coffee”</p>
+    <button onclick="alert('Reserve a Table clicked!')">Reserve a Table</button>
+  </div>
+</section>
+
+<section id="menu" class="container">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <article class="menu-item">
+      <img src="menu1.jpg" alt="Cafe Latte" />
+      <div class="menu-item-content">
+        <h3>Cafe Latte</h3>
+        <p>It's balanced coffee and milk flavor and a thin layer of foam</p>
+        <button class="add-to-cart" aria-label="Add item to cart">Add to Cart</button>
+        <span>$22</span>
+      </div>
+    </article>
+    <article class="menu-item">
+      <img src="menu3.jpg" alt="Ristretto" />
+      <div class="menu-item-content">
+        <h3>Ristretto</h3>
+        <p>Shorter and stronger coffee due to higher concentration of caffeine.</p>
+        <button class="add-to-cart" aria-label="Add item to cart">Add to Cart</button>
+        <span>$14</span>
+      </div>
+    </article>
+    <article class="menu-item">
+      <img src="menu2.jpg" alt="Cappuccino" />
+      <div class="menu-item-content">
+        <h3>Cappuccino</h3>
+        <p>Balanced flavor and creamy texture, topped with foamed milk.</p>
+        <button class="add-to-cart" aria-label="Add item to cart">Add to Cart</button>
+        <span>$11</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="about" class="container">
+  <h2>About Us</h2>
+  <p>
+   At Bites & Brew, coffee is more than a drink — it's a moment. We serve quality brews in a cozy space where you can relax, connect, and enjoy the little things. Every cup is made with care, just for you.
+  </p>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact Us</h2>
+  <form onsubmit="event.preventDefault(); alert('Thank you for contacting us!'); this.reset();">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required />
+    
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required />
+    
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 BREW YOUR COFFEE. All rights reserved.
+</footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+{
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url('image1.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  max-width: 80px;
+  height: 80px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background: #bf6733;
+  color: black;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+nav a {
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('bytebyte.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(211, 85, 0, 0.55);
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: auto;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+.hero button {
+  background: #fff;
+  color: #d35400;
+  border: none;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(211, 85, 0, 0.5);
+}
+.hero button:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+#menu {
+  background: #fff3e6;
+  padding: 3rem 1rem;
+}
+#menu h2 {
+  text-align: center;
+  color: #d35400;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.menu-item {
+  background: #fff;
+  border: 1px solid #ebd7ca;
+  border-radius: 10px;
+  max-width: 280px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.menu-item:hover {
+  transform: translateY(-8px);
+}
+.menu-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.menu-item-content {
+  padding: 1.5rem;
+}
+.menu-item-content h3 {
+  color: #d35400;
+}
+.menu-item-content p {
+  font-size: 0.95rem;
+  color: #555;
+  min-height: 100px;
+  margin: 0.5rem 0;
+}
+.menu-item-content span {
+  font-weight: bold;
+  color: #a04000;
+}
+
+#about {
+  padding: 5rem 2rem;
+  background: #fff8f0;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(211, 85, 0, 0.15);
+  margin: 3rem auto;
+}
+#about h2 {
+  color: #d35400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#about p {
+  color: #6e4a17;
+  font-size: 1.1rem;
+  line-height: 2.0;
+}
+
+#contact {
+  background: #fff3e6;
+  padding: 3rem 1rem 5rem;
+  max-width: 800px;
+  margin: 3rem auto 4rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(211, 85, 0, 0.15);
+}
+#contact h2 {
+  text-align: center;
+  color: #d35400;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d35400;
+  font-weight: 700;
+}
+form input, form textarea {
+  width: 90%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d8b595;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+form textarea {
+  resize: vertical;
+}
+form button {
+  background: #d35400;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(211, 85, 0, 0.5);
+}
+form button:hover {
+  background: #e67e22;
+}
+
+footer {
+  background: #E3F1FF;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
